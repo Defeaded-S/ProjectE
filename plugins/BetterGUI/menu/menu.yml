@@ -1,0 +1,107 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+menu-settings:
+  name: '&c&lМеню'
+  rows: 6
+  command: menu
+  auto-refresh: 5
+  open-action:
+    - 'tell: &eВы открыли меню'
+  close-action:
+    - 'tell: &cВы закрыли меню'
+
+######################
+#+                  +#
+#    DEFAULT ICON    #
+#+                  +#
+######################
+default-icon:
+  type: animated
+  child:
+    frame:
+      id: GREEN_STAINED_GLASS_PANE
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+# Note that the nodes is case-insensitive (except some sub-nodes)
+# You can use lowercase or uppercase whatever you want
+shop:
+  COMMAND: 'shop'
+  NAME: '   &f⎡  &eМагазин  &f⎦'
+  LORE:
+    - '&8Покупка'
+    - '&7Не хватает мощных предметов?'
+    - '&7Тогда купи их!'
+    - ''
+    - '&aНажми для открытия'
+  ID: 'saddle'
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 3
+money:
+  COMMAND: 'job'
+  NAME: '   &f⎡  &eЗаработок  &f⎦'
+  LORE:
+    - '&8Заработок игровой валюты'
+    - '&7В данном меню ты найдешь'
+    - '&7разные способы заработка'
+    - '&7игровой валюты'
+    - ''
+    - '&aНажми для открытия'
+  ID: 'gold_ingot'
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 3
+kit:
+  COMMAND: 'kiter'
+  NAME: '   &f⎡  &eНаборы  &f⎦'
+  LORE:
+    - '&8Предметы'
+    - '&7Каждый игрок может взять себе'
+    - '&7определенный набор'
+    - ''
+    - '&aНажми для открытия'
+  ID: 'player_head'
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 3
+randomtp:
+  COMMAND: 'tpr'
+  NAME: '   &f⎡  &eСлучайная телепортация  &f⎦'
+  LORE:
+    - '&8Место для построек'
+    - '&7Случайная телепортация поможет'
+    - '&7тебе найти место для построек'
+    - ''
+    - '&aНажми для использования'
+  ID: 'ender_pearl'
+  POSITION-X: 1
+  POSITION-Y: 5
+donate:
+  COMMAND: 'donate'
+  NAME: '   &8❨ &eДонат &8❩'
+  LORE:
+    - ' &8Новые возможности'
+    - ''
+    - ' &e> &bПокупается на месяц'
+    - ' &e> &bПосле вайпа сохраняется'
+    - ' &e> &bКупить можно на сайте&8:'
+    - '       &e&l&nmc-oasis.ru'
+    - ''
+  ID: 'diamond'
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 5
+
+close-the-menu:
+  id: BARRIER
+  POSITION-X: 5
+  POSITION-Y: 6
+  name: '&cЗакрыть меню'
+  close-on-click: true
