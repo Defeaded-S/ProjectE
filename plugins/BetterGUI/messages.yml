@@ -1,0 +1,14 @@
+prefix: '&f[&bBetterGUI&f] '
+no-permission: '&cУ вас нет разрешения на это'
+player-only: '&cВы должны быть игроком, чтобы сделать это'
+success: '&aУспех'
+menu-required: '&cВы должны указать меню'
+menu-not-found: '&cЭтого меню не существует'
+have-met-requirement-placeholder: 'Yes'
+invalid-number: '&Преобразование ошибок! {input} не является допустимым числом'
+invalid-condition: '&cНедопустимое состояние! Пожалуйста, сообщите об этом администрации'
+invalid-flag: '&cНе удается найти флаг ''{input}''. Сообщите об этом администрации'
+invalid-enchantment: '&cОшибка разбора чар! {input} не является действительным заклинанием'
+player-not-found: '&cИгрок не найден. Может быть, он находится в автономном режиме
+  или не присоединился к вашему серверу'
+empty-arg-value: /empty/
